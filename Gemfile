@@ -57,3 +57,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'grape'
 # disables the security feature of strong_params at the model layer, allowing you the use of Grape's own params validation instead
 gem 'hashie-forbidden_attributes'
+# active-model-serializers
+gem 'grape-active_model_serializers'
+
+# Cross-Origin resource Sharing
+gem 'rack-cors'
