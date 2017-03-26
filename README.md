@@ -1,5 +1,7 @@
 # Open-Signs API
 
+[![Build Status](https://travis-ci.org/deafchi/opensigns-api.svg?branch=master)](https://travis-ci.org/deafchi/opensigns-api)
+
 ```
 rvm install ruby-2.4.1
 bundle install
