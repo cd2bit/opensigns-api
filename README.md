@@ -10,6 +10,8 @@ rails s
 
 This uses the latest stable ruby (at time of writing) along with rails 5.1. Grape is set up.
 
+![entity relationship diagram](erd.png)
+
 ## RSpec
 
 Generate with `rails generate rspec:install` once. From now on, test with
