@@ -52,6 +52,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # rake grape:routes
   gem 'grape_on_rails_routes'
+  # ERD generator
+  gem "rails-erd"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

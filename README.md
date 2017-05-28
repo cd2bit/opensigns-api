@@ -10,6 +10,8 @@ rails s
 
 This uses the latest stable ruby (at time of writing) along with rails 5.1. Grape is set up.
 
+![entity relationship diagram](erd.png)
+
 ## RSpec
 
 Generate with `rails generate rspec:install` once. From now on, test with
@@ -17,3 +19,17 @@ Generate with `rails generate rspec:install` once. From now on, test with
 ```
 bundle exec rspec
 ```
+
+## Database Migrations
+
+Always run `rake db:migrate` before you make changes to anything.
+
+## ERD
+
+To generate an ERD file, run
+
+```
+bundle exec erd
+```
+
+Make sure you migrate the database entirely.
