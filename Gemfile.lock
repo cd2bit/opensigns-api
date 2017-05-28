@@ -123,6 +123,7 @@ GEM
     nio4r (2.0.0)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    pg (0.20.0)
     puma (3.8.2)
     rack (2.0.1)
     rack-accept (0.4.5)
@@ -162,6 +163,7 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    redis (3.3.3)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
       rspec-expectations (~> 3.5.0)
@@ -242,11 +244,13 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
+  pg
   puma (~> 3.0)
   rack-cors
   rails (~> 5.0.2)
   rails-erd
   rake
+  redis (~> 3.0)
   rspec
   rspec-rails
   sass-rails (~> 5.0)
