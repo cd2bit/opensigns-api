@@ -20,6 +20,14 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+staging:
+  <<: *default
+  adapter: postgresql
+  database: opensigns-api-staging
+  url: <%= ENV['DATABASE_URL'] %>
+
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: opensigns-api
+  url: <%= ENV['DATABASE_URL'] %>
