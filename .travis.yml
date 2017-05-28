@@ -1,8 +1,16 @@
 language: ruby
 rvm:
-  - 2.4.1
+- 2.4.1
 cache: bundler
 notifications:
   email:
     on_success: never
     on_failure: always
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: F18gzEvCoIwohji4WAJimPiIG9ujAHGR8GV3r2c0LArujfPYbkkY49DzhMPnRA/ASOfcieyAozFr8JY634YGvf0P9ynmRlHPN5DkG+Pa7iUVdopkE8IhKFnaX58PraOLndUAqfIEc8fdLSp4T2z9vjoI0RMeSEnIGJzjDqcBzoiuaqLZLJ0j8CzNDJ7iRptdn7PZvMpz5U3QczhpB/E8m6X3BrXZ3LKt0PkLOfRLgEOmPXRXHQeq2z01I2OcehhkVszstRkz3++YExeFIxdtNiJiA8K30Fj7p+Pb9JJrjfQlEyYwDeKChJ5Rj7L+xEX2oGxW3fZSiGEDbtaQ8lKkVxjY/OAdaNXbZVUbqyv04285mUqzIyrxGnTfewbmEZo5o7qKLfibXnWiYI6t8fBlFVMfYzPaQHTdkOxrQN/WdY2FTiogP6GtDthvjFt6L6AEcjaaW7xiazXO1pFMjJC80iUjVs6FuqASun8QyJ8VMbdaYVu+wKFvqKrvu3Sdu03NHOSHL2aA6G4Dw8S1OUxuaKYSttO9J5Z9mqgu/6eiPVEf/b6dhWj+cI541JDX87vax8ELJtzw5KDOxrshSXwyBvtGnBqdM103zdvhWLZZ5qLZ5HN5SElWLNrtwmfJrVdjcY5ds+Wu1CVV1InrBVhUMYLrynCVJ7xO2/9T2NWcOGI=
+  app: opensigns-api-staging
+  run:
+    - "rake db:migrate"
