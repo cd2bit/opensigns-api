@@ -5,6 +5,7 @@ module API
 
       mount API::V1::HelloWorld
       mount API::V1::Categories
+      mount API::V1::Signs
     end
   end
 end
