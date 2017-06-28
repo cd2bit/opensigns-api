@@ -6,6 +6,10 @@ module API
 
       included do
         version "v1", using: :path
+
+        get do
+          { version: 'v1' }
+        end
       end
     end
   end
